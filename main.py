@@ -12,7 +12,7 @@ import re
 
 #from Excel.tests.test_active import TestView
 
-XML_DIR = r"\\10.87.199.29\c$\xampp\htdocs\ftp_recebedor\upload_de_dados\planos_triagem_po"
+XML_DIR = r"planos_triagem_po"
 def limpar_rampa(rampa):
     return re.sub(r"^[A-Z]+", "", rampa.strip()).lstrip("0")
 # Configurações do banco de dados
@@ -1599,6 +1599,7 @@ def main(page: ft.Page):
     """
     # Carrega tabelas ao iniciar
     # ao_carregar(None)
+
 
 
 ft.app(target=main)
